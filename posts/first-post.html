@@ -7,10 +7,19 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
     <style>
+        div {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: lightpink;
+        }
         .center {
             max-width: 670px;
             margin: 0 auto;
             padding: 0 15px;
+            text-align: center;
         }
 
         article {
@@ -27,12 +36,19 @@
             padding: 55px;
         }
 
-        article {
-            text-align: center;
+        .post {
+            text-align: left;
         }
 
-        article p{
-            text-align: left;
+        h3,
+        h4,
+        p {
+            margin: 0;
+        }
+
+        p {
+            font-family: Caslon, 'Times New Roman', Times, serif;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -52,10 +68,10 @@
         </div>
     </header>
     <div class="center">
-        <article class="page">
-            <img style="margin: 30px; width: 300px;" src="/profile.jpg" alt="image of author">
-            <p style="margin: 0;">Hi! I'm Michael (or Mike, if you're a Mike person). I was born in St. Louis, MO, but I currently live in New Haven, CT where I'm a junior at Yale University. Some things I enjoy are playing water polo, learning about computers, and experimenting with fermented foods. I hope you stick around!</p>
-        </article>
+    <h2>My First Post!</h2>
+    <article class="post">
+        <p>Just writing some random stuff for formatting purposes. I guess I'll copy in a pargraph from something to see how it looks.</p>
+    </article>
     </div>
 </body>
 

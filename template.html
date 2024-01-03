@@ -7,10 +7,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
     <style>
+        div {
+            margin: 0;
+            padding: 0;
+        }
+
         .center {
             max-width: 670px;
             margin: 0 auto;
             padding: 0 15px;
+            text-align: center;
         }
 
         article {
@@ -18,7 +24,7 @@
         }
 
         nav {
-            /* background-color: lightblue; */
+            background-color: lightblue;
             display: block;
             text-align: center;
         }
@@ -27,12 +33,14 @@
             padding: 55px;
         }
 
-        article {
-            text-align: center;
+        .post {
+            text-align: left;
         }
 
-        article p{
-            text-align: left;
+        h3,
+        h4,
+        p {
+            margin: 0;
         }
     </style>
 </head>
@@ -51,12 +59,6 @@
             </nav>
         </div>
     </header>
-    <div class="center">
-        <article class="page">
-            <img style="margin: 30px; width: 300px;" src="/profile.jpg" alt="image of author">
-            <p style="margin: 0;">Hi! I'm Michael (or Mike, if you're a Mike person). I was born in St. Louis, MO, but I currently live in New Haven, CT where I'm a junior at Yale University. Some things I enjoy are playing water polo, learning about computers, and experimenting with fermented foods. I hope you stick around!</p>
-        </article>
-    </div>
 </body>
 
 </html>
