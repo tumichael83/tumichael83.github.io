@@ -2,3 +2,16 @@
 layout: default
 title: Archive
 ---
+<!-- <div class="title">
+<h2>All Posts</h2>
+</div> -->
+
+{% for post in site.posts %}
+<a href="{{ post.url }}">
+    <div class="archive-listing">
+        <h2 class="archive-post-title">{{ post.title }}</h2>
+        <h3 class="archive-post-description"> {{ post.description }}</h3>
+        <time class="archive-post-date">{{ post.date | date: "%m/%d/%y"}}</time>
+    </div>
+</a>
+{% endfor %}

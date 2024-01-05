@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Pacifico";
+    src: url('/assets/font/Pacifico/Pacifico-Regular.ttf') format('truetype');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,18 +13,32 @@
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
+    --accent-color: #FAD9EB;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
 }
 
 .center {
     max-width: 750px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0px;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    padding-right: 40px;
+    padding-right: 0px;
+    font-family: "Pacifico", "Open Sans", sans-serif;
+}
+
+h1 {
+    font-size: 2.8em;
 }
 
 .banner {
@@ -36,10 +55,54 @@ nav {
 }
 
 nav a {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    color: #fc79f4;
+    text-decoration: underline dotted;
+}
+
+.title-line {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 p {
     line-height: 150%;
+}
+
+.post-title {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+time {
+    font-size: 1em;
+    font-weight: 200;
+    color: #666;
+}
+
+.archive-listing {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 5px;
+}
+
+.archive-listing:hover {
+    background-color: var(--accent-color);
+}
+
+.archive-post-description {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.archive-post-date {
+    font-size: 0.8em;
 }

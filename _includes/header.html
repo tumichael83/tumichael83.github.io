@@ -1,22 +1,32 @@
 <header>
     <div class="center">
         <div class="banner">
-        <div class="logo">
-            <img src="/assets/images/flamingo.svg" style="height: 100px">
-            <h1>Tu's Company</h1>
+            <div class="logo">
+                <img src="/assets/images/flamingo.svg" style="height: 100px">
+                <h1>Tu's Company</h1>
+            </div>
+            <nav>
+                <a href="/" {% if page.url=="/" %}style="color: #fc79f4;"{% endif %}>
+                    Home
+                </a>
+                &#x273D;
+                <a href="/archive.html" {% if page.url=="/archive.html" %}style="color: #fc79f4;"{% endif %}>
+                    Archive
+                </a>
+                &#x273D;
+                <a href="/about.html" {% if page.url=="/about.html" %}style="color: #fc79f4;"{% endif %}>
+                    About
+                </a>
+                <!-- &#x273D; -->
+                <a href="/contact.html" {% if page.url=="/contact.html" %}style="color: #fc79f4;"{% endif %}>
+                    Contact
+                </a>
+                &#x273D;
+                <a href="/lists.html" {% if page.url=="/lists.html" %}style="color: #fc79f4;"{% endif %}>
+                    Lists
+                </a>
+            </nav>
         </div>
-        <nav>
-            <a href="/">Home</a>
-            &#x273B;
-            <a href="/archive.html">Archive</a>
-            &#x273B;
-            <a href="/about.html">About</a>
-            <!-- &#x273B; -->
-            <a href="/contact.html">Contact</a>
-            &#x273B;
-            <a href="/lists.html">Lists</a>
-        </nav>
-    </div>
-    <hr style="margin: 20px 0;">
+        <hr style="margin: 20px 0;">
     </div>
 </header>

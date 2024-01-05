@@ -2,7 +2,9 @@
 layout: default
 ---
 <article>
-    <h2>{{ page.title }}</h2>
-    <h3> {{ page.date | date_to_string }}</h3>
+    <div class="title-line">
+        <h2 class="post-title">{{ page.title }}</h2>
+        <time>{{ page.date | date: "%D" }}</time>
+    </div>
     {{ content }}
 </article>
